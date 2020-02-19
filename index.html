@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>epidat</title>
+        <!-- meta information -->
+        <meta name="author" content="Thomas Kollatz" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <!-- favicons -->
+        <link rel="shortcut icon" href="resources/img/favicon.png" />
+        <link rel="apple-touch-icon" href="resources/img/apple-touch-icon.png" />
+        <!-- CSS reset and grid -->
+        <link href="vendor/normalize/normalize-4.1.1.css" rel="stylesheet" />
+        <link href="vendor/skeleton/skeleton-2.0.4.css" rel="stylesheet" />
+        <!-- fonts -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,600italic,400italic,700italic,800,800italic&amp;subset=latin,latin-ext"
+            rel="stylesheet" type="text/css" />
+        <!-- styles for included libraries -->
+        <!-- chartist -->
+        <!-- <link rel="stylesheet" href="vendor/chartist/chartist.min-0.9.7.css" />
+-->
+        <!-- unite gallery -->
+        <link rel="stylesheet" href="vendor/unitegallery/css/unite-gallery.css" type="text/css" />
+        <!-- codemirror -->
+        <link rel="stylesheet" href="vendor/codemirror/lib/codemirror.css" />
+        <!-- highlight -->
+        <link rel="stylesheet" href="vendor/highlight/styles/default.css" />
+        <link rel="stylesheet" href="resources/css/hljs.linenumbering.css" />
+        <!-- swiper -->
+        <link rel="stylesheet" href="vendor/swiper/swiper.min.css" />
+        <!-- magnific popup -->
+        <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup-1.1.0.css" />
+        <!-- standard presentation styles -->
+        <link href="resources/css/style.css" rel="stylesheet" />
+        <!-- custom presentation styles -->
+        <link href="resources/css/custom.css" rel="stylesheet" />
+        <!-- hint styles -->
+        <link href="resources/css/hint.css" rel="stylesheet" />
+        <!-- js needed in head -->
+        <!-- greuler -->
+        <script src="vendor/d3/d3-3.5.6.js"></script>
+        <script src="vendor/cola/cola.v3.min.js"></script>
+        <script src="vendor/greuler/greuler-0.5.5.min.js"></script>
+        <!-- html5 dataset shim for IE -->
+        <script src="vendor/impress/html5-dataset.js"></script>
+
+    </head>
+    <body>
+        <div class="fallback-message">
+            <p> Your browser <strong>doesn't support the features required</strong> by
+                impress.mod.js, so you are presented with a simplified version of this presentation. </p>
+            <p> For the best experience please use the latest <strong>Chrome</strong>,
+                    <strong>Safari</strong> or <strong>Firefox</strong> browser. </p>
+        </div>
+        <div id="impress">
+            <div class="step">
+                <h5><strong>2020-02-19</strong> Hamburg </h5>
+                <h5>
+                    <strong>
+                        <a
+                            href="http://epigraphy.info/workshop_4.html"
+                            >epigraphy.info workshop_4</a>
+                    </strong>
+                </h5>
+                <h2 class="red down-100">epidat – research platform for Jewish Epigraphy</h2>
+                <h3 class=" down-25">Interface, Re-Use and cooperations (2002-today)</h3>
+                <h5 class="down-100"> online <a href="https://digicademy.github.io/2020_epigraphy.info#"
+                        title="View the presentation online"> https://digicademy.github.io/2020_epigraphy.info</a>
+                </h5>
+                <h5 class="down-100">
+                    <strong>
+                        <a href="https://orcid.org/0000-0003-1904-1841">Thomas Kollatz, Akademie
+                            Mainz</a> | </strong> Digitale Akademie Mainz <!--  <img src="resources/img/Twitter_bird_logo_2012.svg" alt="Twitter"
+                            class="twitter-icon" />
+                        <a href="https://twitter.com/kol_t" title="Thomas Kollatz on Twitter"
+                            >@kol_t</a> -->
+                    <!--<a href="https://twitter.com/digicademy" title="Digitale Akademie"
+                            >@digicademy</a>-->
+                    <!--  <img src="resources/img/Octicons-mark-github.svg" alt="Twitter"
+                            class="gh-icon" />
+                        <a href="https://github.com/digicademy" title="digicademy on GitHub"
+                            >digicademy</a> | <a href="https://creativecommons.org/licenses/by/4.0/"
+                            >CC-BY 4.0</a></strong> -->
+                </h5>
+            </div>
+            <div class="step">
+                <div class="row">
+                    <div class="eight columns box" style="height:600px;">
+                        <h2 class="red">history</h2>
+                        <ul class="line-height-one-five small even-left">
+                            <li>2002 set up as a database in order to manage the inventarisation of
+                                about 6.000 headstones from the Ashkenazic Cemetery in
+                                <a href="http://www.steinheim-institut.de/cgi-bin/epidat?id=hha">Hamburg-Altona</a> (1621-1871)</li>
+                            <li>data ingest by a team of 10-12 researchers</li>
+                            <li>remote access | server based</li>
+                            <li>since 2006 online</li>
+                            <li>since 2008 epidat provides research data also according to Epidoc TEI XML</li>
+                            <li>more projects followed – the ongoing development of epidat is driven by
+                                projects and scientific cooperations </li>
+                            <li>since 2019 epidat is developed in a scientific cooperation between Steinheim-Institute |
+                                Essen and Academy of Science and Literature | Mainz</li>
+                        </ul>
+                        <figure class="mfp-lightbox box">
+                            <a href="resources/img/chart.png"><img src="resources/img/chart.png" alt="chart"/></a>
+                        </figure>
+                    </div>
+                    <div class="four columns">
+
+                        <img src="resources/img/x_0409030217.jpg" style="width:20rem;" alt="statusante" />
+                        <img src="resources/img/kol4.jpg" alt="paper"/>
+                        <p class="x-small">Hamburg-Altona, Königstraße <br />(fotos: above B. Sommer,
+                            below: M. Brocke)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="row"><div class="six columns"><h2 class="red down-100">scope</h2>
+                        <table>
+                            <tr>
+                                <td>cemeteries</td>
+                                <td class="right">211</td>
+                            </tr>
+                            <tr>
+                                <td>headstones</td>
+                                <td class="right">36,201 </td>
+                            </tr>
+                            <tr>
+                                <td> images</td>
+                                <td class="right">75,686 </td>
+
+                            </tr>
+                            <tr>
+
+                                <td>persons</td>
+                                <td class="right">43,558</td>
+                            </tr>
+                            <tr>
+                                <td>dates</td>
+                                <td class="right">25,127</td>
+                            </tr>
+
+                            <tr>
+                                <td>countries</td>
+                                <td class="right">4[-6]</td>
+                            </tr>
+
+                        </table></div><div class="six columns box" style="height:600px;"><figure
+                            class="mfp-lightbox even-right up-100"><a
+                                href="resources/img/screencapture-localhost-cgi-bin-epitest-2020-02-19-12_51_20.png"><img class="down-100"
+                                    src="resources/img/screencapture-localhost-cgi-bin-epitest-2020-02-19-12_51_20.png" alt="epidat beta" /></a></figure></div>
+                </div>
+                <div class="row"><div class="twalve columns">
+                    <p class="x-small right down-100"><a
+                        href="http://www.steinheim-institut.de/cgi-bin/epidat?lang=en&amp;release=beta"
+                        >start page of beta version</a> (2020-02)</p></div></div>
+            </div>
+            <div class="step">
+                <h2 class="red">
+                    What is <q>epidat</q>
+                </h2>
+                   
+                        <h4>epidat is a database</h4> <p class="small">
+                            As a database for Jewish gravestone epigraphy, <q>epidat</q> is used to inventory, document, edit and present epigraphic holdings. Currently inscriptions of Jewish cemeteries from nine centuries and four countries are made available via
+                            <a href="?info=time&amp;lang=en&amp;release=beta">chronological</a>, <a href="?info=space&amp;lang=en&amp;release=beta">spatial</a> and
+                            <a href="?info=index&amp;lang=en&amp;release=beta">thematic</a> approaches.</p>
+                        <h4>epidat is a research plattform</h4> <p class="small">
+                            As a research platform for Jewish gravestone epigraphy, epidat offers open interfaces to the research data and is involved in interdisciplinary research projects and cooperations in the context of digital epigraphy and Jewish Studies.</p>
+                        <h4>epidat is a long-term epigraphic project</h4><p class="small">Epidat started in 2002 <!--has been programmed by <a href="">Thomas Kollatz</a> since 2002 and -->has been continuously developed since then. The database and research platform was launched online in 2006. Since March 2019 epidat is jointly developed within the framework of a scientific cooperation between the Salomon-Ludwig-Steinheim-Institute, Essen and the Academy of Sciences and Literature | Mainz.
+                            
+                        </p>
+                        <p class="right x-small"><a href="http://www.steinheim-institut.de/cgi-bin/epitest?info=whatisepidat&lang=en&release=beta" target="_blank">what is epidat</a></p>
+            </div>                   
+<!--<div class="step">
+    <div class="row">
+        <div class="twalve columns" >
+            <figure class="mfp-lightbox up-50"><a href="resources/img/screencapture-localhost-cgi-bin-epitest-2020-02-19-12_51_41.png"><img src="resources/img/screencapture-localhost-cgi-bin-epitest-2020-02-19-12_51_41.png" alt="rationale" style="width:60rem"/></a></figure>
+            <p class="right x-small"><a href="http://www.steinheim-institut.de/cgi-bin/epitest?info=whatisepidat&lang=en&release=beta" target="_blank">what is epidat</a></p>
+        </div>-->
+        <!--
+        <div class="four columns">
+            <ul class="medium"><li>database</li><li>research platform</li><li>long-term project</li></ul>
+        </div>
+        -->
+            <div class="step">
+                <div class="row">
+                    <div class="six columns">
+                        <h2 class="red">time</h2>
+                        <p>From 11<sup>th</sup> until 20<sup>th</sup> century. Currently 1.100 <span
+                            class="dotted">dated</span> medieval inscriptions from seven
+                            communities</p>
+                    </div><div class="six columns">
+                        <h2 class="red">space</h2>
+                        <ul class="line-height-one  even-left">
+                            <li>Germany [194]</li>
+                            <li>Lithuania [5]</li>
+                            <li>The Netherlands [7]</li>
+                            <li>Czechia [5]</li>
+                        </ul></div></div>
+                <h2 class="red">spatio-temporal access options</h2>
+                <div class="row">
+                    <div class="six columns"><ul class="even-left medium line-height-one-five">
+                        <li>by year, month, day</li>
+                        <li>by period</li>                                            
+                        <li>full-text search in one, several or all collections</li>
+                    </ul></div>
+                    <div class="six columns">
+                        <ul class="even-left medium line-height-one-five">
+                            <li>within one single cemetry</li>
+                            <li>within a region</li>
+                            <li>with spatio-temporal geobrowser</li>
+                        </ul></div></div>
+                <!--<div class="six columns"><figure class="mfp-lightbox even-left">
+                            <a href="resources/img/geobrowser_names.png">
+                                <img src="resources/img/geobrowser_names.png" style="width:50rem"
+                                /></a>
+                        </figure></div>-->
+            </div>
+            <div class="step">
+                <table class="small">
+                    <tr>
+                        <th></th>
+                        <th class="red"><strong>epidat research data</strong> </th>
+                    </tr>
+                    <tr><th><strong><a href="https://www.forschungsdaten.org/index.php/FAIR_data_principles">fair principle</a></strong></th>
+                        <th><span class="red">F</span>indable <span class="red">A</span>ccesible <span class="red">I</span>nteroperable <span class="red">R</span>e-usable</th> </tr>
+                    <tr>
+                        <td><strong>licence</strong></td>
+                        <td>are released online under an open Creative Commons Licence <a
+                            href="http://creativecommons.org/licences/by/4.0"><img
+                                src="resources/img/cc.png" style="width:10rem" alt="cc"/></a></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><h4>standard format</h4></td>
+                        <td class="line-height-one-five"> are provided in 
+                            <a href="https://sourceforge.net/p/epidoc/wiki/Home/">EpiDoc: TEI XML
+                                for Epigraphic Documents</a>
+                            for<!-- <span
+                                class="dotted">users</span>, thus providing research data in a-->
+                            machine readable, system-independent, program-independent and structured
+                            access <!--data format, which is --> (and widely used by
+                            digital epigraphers)<!--</li>
+                            </ul>--></td>
+                    </tr>
+                    <tr>
+                        <td><h4>interoperability</h4></td>
+                        <td>are mapped to authority files, controlled vocabularies and thesauri</td>
+                    </tr>
+                    <tr>
+                        <td><h4>interfaces</h4></td>
+                        <td>are provided via a machine readable interface <!--(e.g. in order to re-use
+                            the data)--></td>
+                    </tr>
+                    
+                </table>
+            </div>
+            
+                            
+            
+                            
+            
+                            
+            
+            
+            <div class="step">
+                <!-- Mainz -->
+                <h2 class="red">headstones as source for cultural and religious history</h2>
+                <div class="row">
+                    <div class="four columns">
+                        <figure class="mfp-lightbox even-right "><a
+                                href="resources/img/2203_mz1_LDA-2008-074.png"><img
+                                    src="resources/img/2203_mz1_LDA-2008-074.png" alt="tobedone" /></a></figure>
+                        <p class="x-small right up-25">Mainz – Gedenkfriedhof: <a
+                                href="http://www.steinheim-institut.de/cgi-bin/epidat?id=mz1-2203&amp;lang=en&amp;anzeige=mix"
+                                >mz1-2203</a><br />foto: LDA Mainz</p>
+                        <blockquote class="right medium">‎‏זה קבר של הרב ר׳ מאיר בר אברהם הכהן הזקן
+                            הנהרג על יחוד השם במ״א לפרט כ״ז בסיון ביום שנשרף בית הכנסת ונקרעו סיפרי
+                            תורה מנוחתו כבוד‏‎ </blockquote>
+                    </div><div class="eight columns">
+                        <dl class="small down-25 line-height-one-five ">
+                            <dt class="red">place of burial</dt>
+                            <dd class="even-left">Mainz</dd>
+                            <dt class="red">date of death | date of event</dt>
+                            <dd class="even-left">1281-06-15 | 27. Sivan 5041</dd>
+                            <dt class="red">name</dt>
+                            <dd class="even-left">Meir b. Awraham HaCohen</dd>
+
+                            <dt class="red">event</dt>
+                            <dd class="even-left">destruction of the synagogue and the torascrolls: </dd>
+                            <dd class="right">ביום שנשרף בית הכנסת ונקרעו סיפרי תורה </dd>
+                            <dt class="red">concept</dt>
+                            <dd class="right">הנהרג על יחוד השם</dd>
+                            <dt class="red ">dislocation</dt>
+                            <dd class="even-left">headstone was found by workers on June 5, 1899 in
+                                the cellar of the inn <q>Zur Stadt Mainz</q> in the street <q>Große
+                                    Bleiche</q></dd>
+
+                        </dl>
+                    </div></div>
+            </div>
+            <div class="step">
+                <!-- Vogel -->
+                <h2 class="red">headstones as source for history of literature</h2>
+                <div class="row">
+                    <div class="four columns box down-50" style="height:600px">
+                        <figure class="mfp-lightbox even-right">
+                            <a href="resources/img/1678_FE_0110140126.jpg"><img
+                                src="resources/img/1678_FE_0110140126.jpg" alt="tobedone"/></a>
+                        </figure>
+                        
+                    </div>
+                    <div class="four columns">
+                        <table class="small even-right down-25 line-height-one">
+                            <tr>
+                                <td style="direction:rtl;text-align:right;">‎‏גם חסידה בשמים‏‎</td>
+                            </tr>
+                            <tr>
+                                <td style="direction:rtl;text-align:right;">‎‏<span class="akr"
+                                        >פ</span>ה שוכבת הדרת הנשים‏‎</td>
+                            </tr>
+                            <tr>
+                                <td style="direction:rtl;text-align:right;">‎‏<span class="akr"
+                                        >א</span>ף גם עדים וצבי תפארתם‏‎</td>
+                            </tr>
+                            <tr>
+                                <td style="direction:rtl;text-align:right;">‎‏<span class="akr"
+                                        >ג</span>מלה חסד עם הרשים‏‎</td>
+                            </tr>
+                            <tr>
+                                <td style="direction:rtl;text-align:right;">‎‏<span class="akr"
+                                        >ל</span>זמנה היתה כתר מכתם‏‎</td>
+                            </tr>
+                            <tr>
+                                <td style="direction:rtl;text-align:right;">‎‏בת פו״מ כהר״ר
+                                    יוסף‏‎</td>
+                            </tr>
+                            <tr>
+                                <td style="direction:rtl;text-align:right;">‎‏פופרט אשת כ״ה
+                                    משה‏‎</td>
+                            </tr>
+                            <tr>
+                                <td style="direction:rtl;text-align:right;">‎‏אפינהיי׳ הגובה
+                                    באלטונא‏‎</td>
+                            </tr>
+                            <tr>
+                                <td style="direction:rtl;text-align:right;">‎‏נפטר׳ ונקבר׳ יום ב׳
+                                    ך״ז טבת‏‎</td>
+                            </tr>
+                            <tr>
+                                <td style="direction:rtl;text-align:right;">‎‏שנת <span class="chr"
+                                        >כ</span><span class="chr">צ</span><span class="chr"
+                                        >פ</span><span class="chr">ו</span><span class="chr"
+                                        >ר</span> נודדת מ<span class="chr"
+                                        >ק</span><span class="chr">נ</span><span class="chr"
+                                        >ה</span>‏‎</td>
+                            </tr>
+                            <tr>
+                                <td style="direction:rtl;text-align:right;">‎‏תנצב״ה ‏‎</td>
+                            </tr>
+                        </table></div>
+                    <div class="four columns">
+                        <dl class="even-left x-small down-25 line-height-one-five ">
+                            <dt class="red">place of burial</dt>
+                            <dd>Hamburg</dd>
+                            <dt class="red">name(s)</dt>
+                            <dd class="even-left">Vogel (in acrostic)</dd>
+                            <dd><u>father</u> Josef Popert</dd>
+                            <dd><u>husband</u> Moshe Oppenheim</dd>
+                            <dt class="red">task</dt>
+                            <dd>הגובה באלטונא‏‎ charity administrator</dd>
+                            <dt class="red">date_of_death</dt>
+                            <dd class="even-left">03.01.1791 | 27. Tewet 5551</dd>
+                            <dt class="red">symbol</dt>
+                            <dd>bird</dd>
+                            <dt class="red">style</dt>
+                            <dd>rhyme, meter, <span class="akr">acrostic</span>, <span class="chr"
+                                    >chronostic</span>, play on words</dd>
+                            <dt class="red">id</dt>
+                            <dd><!--, Königstraße--><a
+                                href="http://www.steinheim-institut.de/cgi-bin/epidat?id=hha-1678&amp;lang=en&amp;anzeige=mix"
+                                >hha-1678</a>
+                                </dd>
+                        </dl>
+                    </div>  </div>  </div>
+            <div
+                class="step">
+                <h2 class="red">Agile workflow</h2>
+                <div class="row">
+                    <div class="six columns"><figure class="mfp-lightbox"><a
+                        href="resources/img/damage_report.png"><img
+                            alt="tobedone"          src="resources/img/damage_report.png" /></a></figure><p
+                                class="x-small right">damage report שו״ם</p></div>
+                    <div class="six columns">
+                        <ol class="line-height-one-five small">
+                            <li>inventarisation: photographic record and – if possible – map </li>
+                            <li>documentation: and digital editing </li>
+                            <li>damage description </li>
+                            <li>restoration plan</li>
+                            <li>monitoring restoration works</li>
+                            <li>documentation (description and photo)</li>
+                        </ol>
+                        <div class="row">
+                            <div class="ten columns">
+                                <figure class="mfp-lightbox"><a
+                                    href="resources/img/x_0409030237.jpg"><img
+                                        src="resources/img/x_0409030237.jpg" style="width:40rem"
+                alt="tobedone"                    /></a></figure></div>
+                            <div class="two columns">
+                                <figure class="mfp-lightbox"><a href="resources/img/dmm.png"><img
+                                    src="resources/img/dmm.png" style="width:10rem"
+                                    alt="tobedone"            /></a></figure>
+                            </div>
+                        </div>
+                        <p class="x-small right"><a
+                            href="http://www.steinheim-institut.de/cgi-bin/epidat?function=stat&amp;sel=hha&amp;anzeige=dmm#dmm"
+                            >restoration activities Hamburg</a></p>
+                    </div>
+                </div></div>
+            <div class="step">
+                <h2 class="red">Translation tool</h2>
+                <p>Identifies quotations, names, places, dates, idioms – dynamic dictionaries </p>
+                <video src="resources/img/Rohuebersetzung.mp4" controls="controls" width="1024"
+                    autoplay="autoplay"></video><p class="x-small right">developed by T. Kollatz</p>
+            </div>
+            <div class="step">
+                <h2 class="red">cooperation and re-use</h2>
+<div class="row">
+    <div class="six columns">
+        <figure class="mfp-lightbox even-left">
+            <a href="resources/img/screencapture-steinheim-institut-de-cgi-bin-epidat-2020-02-19-14_50_56.png"><img src="resources/img/screencapture-steinheim-institut-de-cgi-bin-epidat-2020-02-19-14_50_56.png" alt="tobedone" style="width:50rem"></a>
+        </figure>
+        
+    </div>
+    <div class="six columns">
+        
+        <ul class="line-height-one-five down-50">
+            <li>based on several export and exchange formats
+            <ul class="line-height-one-five">
+                <li>EpiDoc TEI XML</li>
+                <li><a href="http://www.steinheim-institut.de/cgi-bin/epidat?id=hha-3361-rdfxml">XTriples configuration file</a> based on EPIDOC TEIXML for RDF and SVG Graph output </li>       
+                <li>RDF-XML – via XTriples from EpiDoc to RDF 
+                </li>
+                <li>RTF – via TUSCRIPT from EpiDoc to RTF</li>
+            </ul></li>
+        </ul>
+        <p class="right x-small"><a href="http://www.steinheim-institut.de/cgi-bin/epidat?id=hha-3361&lang=de&release=beta">export formats</a></p>
+    </div>
+</div>
+            </div>
+            <div class="step">
+                <h2 class="red">XTriples</h2>
+                <div class="row"><div class="six columns"><blockquote>XTriples is a generic webservice to extract RDF statements from XML resources.With the XTriples webservice you can crawl XML repositories and extract RDF statements using a simple configuration based on XPATH/XQuery expressions.The webservice can be used with direct POST, form-style POST or GET requests.
+                </blockquote>
+                    <p class="x-small right"><a href="https://xtriples.lod.academy/index.html">XTriples</a></p></div>
+                    <div class="row"><div class="six columns"><figure class="mfp-lightbox box up-100" style="width:30rem"><a href="resources/img/xtriples-lod-academy-index-html-2019-07-11-11_33_36.png"><img src="resources/img/xtriples-lod-academy-index-html-2019-07-11-11_33_36.png" alt="tobedone"/></a></figure></div></div>
+                </div></div>
+            
+
+            <div class="step">
+                <h3 class="red">A Cemetery is a spatial ensemble of timebound objects</h3>
+                <div id="researchdata_alt" style="display:none">
+                    <a
+                        href="http://www.steinheim-institut.de/cgi-bin/epidat?id=wrm&amp;release=beta&amp;lang=en">
+                        <img alt="Worms: Im heiligen Sand"
+                            src="resources/img/juedischer_friedhof_worms_s_w.png"
+                            data-image="resources/img/juedischer_friedhof_worms_s_w.png"
+                            data-description="dé.wé. [CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)], via Wikimedia Commons"
+                            style="display:none" />
+                        <!-- https://commons.wikimedia.org/wiki/File:Jüdischer_Friedhof_Worms.jpg  -->
+                    </a>
+                    <a
+                        href="http://steinheim-institut.de/cgi-bin/epidat?id=ffb&amp;release=beta&amp;lang=en">
+                        <img alt="Frankfurt, Battonstraße: Old Cemetery"
+                            src="resources/img/ffb6903.jpg" data-image="resources/img/ffb6903.jpg"
+                            data-description="Andreas Heemsteege [CC BY 4.0], via epidat"
+                            style="display:none" />
+                    </a>
+                    <a
+                        href="http://steinheim-institut.de/cgi-bin/epidat?id=wrm&amp;release=beta&amp;lang=en">
+                        <img alt="Hamburg-Altona: Ashkenazic Cemetery"
+                            src="resources/img/x_0409030214.jpg"
+                            data-image="resources/img/x_0409030214.jpg"
+                            data-description="Bert Sommer [CC BY 4.0], via epidat"
+                            style="display:none" />
+                    </a>
+                    <a
+                        href="http://steinheim-institut.de/cgi-bin/epidat?id=bay&amp;release=beta&amp;lang=en&amp;anzeige=mix">
+                        <img alt="Bayreuth: Jewish Cemetery"
+                            src="resources/img/0000_bth_090521l1000946pc_klein_s_w.png"
+                            data-image="resources/img/0000_bth_090521l1000946pc_klein_s_w.png"
+                            data-description="Bert Sommer [CC BY 4.0], via epidat"
+                            style="display:none" />
+                    </a>
+                </div>
+            </div>
+            <!--<div class="step">
+                <h2 class="red">time-based access options</h2>
+                <div class="row">
+                    <div class="six columns box" style="height:480px">
+                        <figure class="mfp-lightbox even-left ">
+                            <a href="resources/img/onthisday.png">
+                                <img src="resources/img/onthisday.png" alt="tobedone"/></a>
+                        </figure>
+                    </div>
+                    <div class="six columns box" style="height:480px;">
+                        <figure class="mfp-lightbox even-left">
+                            <a href="resources/img/yahrzeit.png"><img
+                                src="resources/img/yahrzeit.png" alt="tobedone" /></a>
+                        </figure>
+                    </div>
+                </div>
+                <div class="row"><div class="six columns"><p class="x-small up-25"><a
+                                href="http://www.steinheim-institut.de/cgi-bin/epidat?info=time&amp;show=onthisday&amp;lang=en&amp;release=beta"
+                                >onthisday</a></p></div><div class="six columns"><p
+                            class="x-small up-25"><a
+                                href="http://steinheim-institut.de/cgi-bin/epidat?info=time&amp;show=yahrzeit&amp;lang=en&amp;release=beta"
+                                >yahrzeit</a></p></div></div>
+            </div>-->
+            
+            
+            
+            <div class="step">
+                <h2 class="red">Spatial relations</h2><h3>looking for patterns – changing perspectives</h3>
+                <table class="small">
+                    <tr><th>close reading</th><th>distant reading</th></tr>
+                    <tr>
+                        <td>zoom in </td>
+                        <td>zoom out</td>
+                    </tr>
+                    <tr>
+                        <td>single object</td>
+                        <td>ensemble</td>
+                    </tr>
+                    <tr>
+                        <td>object</td>
+                        <td>context</td>
+                    </tr>
+                    <tr>
+                        <td>discovering patterns</td>
+                        <td>units: rows | fields </td>
+                    </tr>
+
+                </table>
+                <!--<div><blockquote class="small down-50">Die Sprache des geschichtlichen Denkmals wird ein zweites Denkmal: was der Grabstein verkündet ist für den Einzelnen, wie er es verkündet ist für die Gesammtheit ein Gedächtniss. 
+                    </blockquote>
+                <p class="x-small right">Zunz · Zur Geschichte und Literatur · 1845</p></div>-->
+            </div>
+            <div class="step">
+                
+                
+                <div class="row">
+                    <div class="six columns"><h2 class="red">spatio-temporal visualisation</h2><p class="x-small down-50">visualization in geobrowser<br/><a
+                        href="http://steinheim-institut.de/daten/epidat.kml?lang=en"
+                        title="access options">http://steinheim-institut.de/</a></p><ul class="x-small line-height-one-five"><li>distribution of symbols</li>
+                            <li>distribution of names</li></ul>
+                    </div>
+                    <div class="six columns box" style="height:600px">
+                        <figure class="mfp-lightbox ">
+                            <a href="resources/img/lilies_Geo-Browser.png">
+                                <img class="pull-up" src="resources/img/lilies_Geo-Browser.png"
+                                    style="width:50rem" alt="tobedone"/>
+                            </a></figure></div></div></div>
+            
+            
+            <div class="step">
+                <h2 class="red">Re-Use – Hackathon</h2>
+                <div class="row">
+                    <div class="six columns">
+                        <figure class="mfp-lightbox even-left" style="width:40rem;"><a href="resources/img/poeticrelief-org-ffb-2049-2019-02-13-03_05_50.png"><img src="resources/img/poeticrelief-org-ffb-2049-2019-02-13-03_05_50.png"  alt="tobedone"/></a></figure><!--<p class="x-small"><a href="http://www.poeticrelief.org">http://www.poeticrelief.org</a></p>-->
+                        <pre><code>/TEI/teiHeader/fileDesc/titleStmt/title
+/TEI/facsimile/graphic[1]
+//*[@type='edition']
+//*[@type='translation']</code></pre></div>
+                    <div class="six columns">
+                        <!--<h3>Woher stammt die Idee zu POETIC RELIEF?</h3>-->
+                        
+                            <blockquote class="down-25">During the first German cultural hackathon, <a href="http://codingdavinci.de">Coding da Vinci</a>, where the <a href="http://www.steinheim-institut.de/wiki/index.php/Hauptseite">Steinheim Institute</a> acted as participating cultural institution and partner, the <a href="http://www.steinheim-institut.de/cgi-bin/epidat">epidat dataset</a> was presented and the website was developed from it in order to present the grave inscriptions in a new way.
+                                
+</blockquote>
+                        
+                        <p class="x-small right"><a href="http://www.poeticrelief.org/faq" target="_blank">http://www.poeticrelief.org/faq</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <h2 class="red">Re-Use – Researchdata</h2>
+                <div class="row">
+                    <div class="six columns">
+                        <figure class="mfp-lightbox even-left"><a
+                            href="resources/img/graph_aha-family-relations.png"><img
+                                src="resources/img/graph_aha-family-relations.png"
+                                alt="tobedone"   style="width:30rem;"        /></a></figure>
+                        <!-- <p class="x-small up-25"><a
+                            href="http://xtriples.spatialhumanities.de/examples/dh/epidat/index.html"
+                            >Kollatz-Kuczera-Schrade </a></p>-->
+                    </div>
+                    <div class="six columns">
+                        <blockquote class="small down-50"><strong>DHd2016 Leipzig / Pre-Conference Workshop</strong> For the visualisations, data sets from the Salomon Ludwig Steinheim-Institut for Jewish-German History and the Academy of Sciences and Literature | Mainz have been used.</blockquote>
+                        
+                        <p class="x-small right"><a href="http://dhd2016.digitale-akademie.de/workshop/" target="_blank">Kollatz-Kuczera-Schrade 2016</a></p>
+                    </div></div>
+                <pre><code class="xml">&lt;particDesc&gt;
+ &lt;listPerson&gt;
+  &lt;person xml:id="aha-13-1" sex="1"&gt;
+   &lt;persName&gt;Elieser ben Josef Hakohen&lt;/persName&gt;
+   &lt;death when="1879-12-08"/&gt;
+  &lt;/person&gt;
+  &lt;person xml:id="aha-13-2" sex="1"&gt;
+   &lt;persName&gt;Jehuda ben Josef Hakohen&lt;/persName&gt;
+   &lt;death when="1879-12-09"/&gt;
+  &lt;/person&gt;
+  &lt;listRelation&gt;
+   &lt;relation name="parent" active="#aha-21-1 #aha-48-1" passive="#aha-13-1"/&gt;
+   &lt;relation name="sibling" mutual="#aha-50-1 #aha-13-1"/&gt;
+   &lt;relation name="sibling" mutual="#aha-13-1 #aha-13-2"/&gt;
+  &lt;/listRelation&gt;
+ &lt;/listPerson&gt;
+&lt;/particDesc&gt;
+</code></pre>
+                <p class="x-small right"><a
+                    href="http://www.steinheim-institut.de/cgi-bin/epidat?id=aha-13-teip5" target="_blank"
+                    >hha-3361-teip5</a></p>
+            </div>
+            
+            
+            <div class="step">
+                <div class="row">
+                <h2 class="red">Re-Use – genealogy</h2>
+                
+                    <div class="five columns"><figure class="mfp-lightbox even-left"><a
+                        href="resources/img/hha_visualization.png"><img
+                            src="resources/img/hha_visualization.png" alt="tobedone" /></a></figure><p class="x-small right"><a href="http://xtriples.spatialhumanities.de/examples/dh/epidat/index.html" target="_blank">Torsten Schrade</a></p></div>
+                    
+                    <div class="seven columns">
+                        <blockquote>
+                            Inspiration for this example drawn from a discussion about visualizing XML based relationships on the TEI mailinglist. Credits and thanks to Thomas Kollatz for the idea. The RDF extraction is modelled on FOAF to represent persons, BIO to represent dates of death and REL to build family relations between persons. Visualization is done using the Sgvizler library and it's Dracula Graph implementation.</blockquote><p class="x-small right">about <a href="http://xtriples.spatialhumanities.de/index.html" target="_blank">XTriples</a></p>
+                    </div>
+            </div>
+            <div class="step">
+                <div class="row"><div class="twalve columns box" style="height:480px">
+                <video src="resources/img/RiR_Heiligenhaus.mp4" controls="controls"
+                    autoplay="autoplay" class="centered small" width="1024"></video></div></div>
+                <p class="right x-small down-100"><a href="https://wiki.de.dariah.eu/display/RIRPUB/RiR"
+                        >RiR-project 2012-2015</a> | template: <a
+                        href="https://wiki.de.dariah.eu/display/RIRPUB/Template+zum+Erstellen+einer+SVG+Planskizze+in+Inkscape"
+                        >Howto make a dynamic map</a></p></div>
+            <div class="step">
+                <h2 class="red">shape and form: switching arches</h2>
+                
+                <div class="row">
+                    <div class="six columns box" style="height:380px;">
+                        <figure class="mfp-lightbox">
+                            <a href="resources/img/Rundbogen_pic.jpg"><img
+                                    src="resources/img/Rundbogen_pic.jpg" style="width:30rem"
+                                    alt="tobedone"      /></a></figure>
+                    </div>
+                    <div class="six columns box" style="height:380px;">
+                        <figure class="mfp-lightbox even-right">
+                            <a href="resources/img/bf_RiR-Szenario_Abschluesse3.jpg"><img
+                                    src="resources/img/bf_RiR-Szenario_Abschluesse3.jpg"
+                                    alt="tobedone"     /></a></figure></div>
+                </div>
+                <blockquote class="medium">Change in funeral tradition happens slowly. Change
+                    manifests itself not only in textual tradition. Cultural change is also
+                    reflected in the use of (new) forms. Text and form do not develop
+                    synchronously</blockquote>
+            </div>
+            <div class="step">
+                <h2 class="red">cultural impact</h2>
+                <p
+                    class="centered x-small">HyperImage <a
+                        href="http://www.uni-lueneburg.de/hyperimage/HI_Altona/">Lighting Table</a>
+                    with cans from Hamburg displayed chronological </p>
+                <div class="row"><div class="twalve columns box" style="height:600px">
+                <figure class="mfp-lightbox">
+                    <a href="resources/img/lichtisch_kanne.png"><img
+                        src="resources/img/lichtisch_kanne.png" alt="tobedone"/></a></figure></div></div>
+            </div>
+            <div class="step">
+                <div class="row">
+                    <div class="three columns">
+                        <h2 class="red">shoes</h2>
+                    </div>
+                    <div class="nine columns">
+                        <ul>
+                            <li>first a symbol for relation between persons and houses</li>
+                            <li>then the former housesymbol became part of family name</li>
+                            <li>but these symbols also depicting contemporary design as well as everyday culture</li>
+                        </ul></div></div>
+                <!--<div id="shoes" style="display:none">
+                    <a href="resources/img/shoe_ffb-444.png"><img alt="ffb-444"
+                        src="resources/img/shoe_ffb-444.png"
+                        data-image="resources/img/shoe_ffb-444.png" data-description="ffb-444"
+                        style="display:none" /></a>
+                    <a href="resources/img/shoe_ffb-444_klein.png"><img alt="ffb-2057"
+                        src="resources/img/shoe_ffb-2057.png"
+                        data-image="resources/img/shoe_ffb-2057.png" data-description="ffb-2057"
+                        style="display:none" /></a>
+                    <a href="resources/img/shoe_ffb-55.png"><img alt="ffb-55"
+                        src="resources/img/shoe_ffb-55.png"
+                        data-image="resources/img/shoe_ffb-55.png" data-description="ffb-55"
+                        style="display:none" /></a>
+                    <a href="resources/img/shoe_ffb-1584.png"><img alt="ffb-1584"
+                        src="resources/img/shoe_ffb-1584.png"
+                        data-image="resources/img/shoe_ffb-1584.png" data-description="ffb-1584"
+                        style="display:none" /></a>
+                    <a href="resources/img/shoe_ffb-52.png"><img alt="ffb-52"
+                        src="resources/img/shoe_ffb-52.png"
+                        data-image="resources/img/shoe_ffb-52.png" data-description="ffb-52"
+                        style="display:none" /></a>
+                    <a href="resources/img/shoe_ffb-1678.png"><img alt="ffb-1678"
+                        src="resources/img/shoe_ffb-1678.png"
+                        data-image="resources/img/shoe_ffb-1678.png" data-description="ffb-1678"
+                        style="display:none" /></a>
+                </div>-->
+                <div>
+                    <img src="resources/img/shoe_ffb-444.png" style="width:16rem" alt="tobedone"/>
+                    <img src="resources/img/shoe_ffb-2057.png"  style="width:16rem" alt="tobedone"/>
+                    <img src="resources/img/shoe_ffb-55.png"  style="width:16rem"  alt="tobedone"/>
+                    <img src="resources/img/shoe_ffb-1584.png"  style="width:16rem" alt="tobedone"/>
+                    <img src="resources/img/shoe_ffb-52.png"  style="width:16rem" alt="tobedone"/>
+                    <img src="resources/img/shoe_ffb-1678.png"  style="width:16rem" alt="tobedone"/>
+                </div>
+            </div>
+            
+            <div class="step">
+               
+                <div class="row">
+                    <div class="six columns box" style="height:600px; ">
+                        <div class="mfp-lightbox">
+                            <a href="resources/img/ddb.png"><img src="resources/img/ddb.png" alt="tobedone" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="six columns">
+                        <h2 class="red">sharing data </h2>
+                        <p class="small">epidat personal data are visible <a
+                            href="https://www.deutsche-digitale-bibliothek.de/entity/11879132X"
+                            >outside</a> our limited domain, e.g. in the <q>Deutsche Digitale Bibliothek</q> by referring to the unique identifier provided by the German National Library</p>
+                        <!--<h3>Semantic
+                            Web</h3><pre><code class="xml">
+<span class="subject-color">subject</span>      <span class="predicate-color">predicate</span>       <span class="object-color">object</span> .
+
+<span class="subject-color">epidat-ID</span>    <span class="predicate-color">sameAS</span>         <span class="object-color">GND-ID</span> .
+<span class="subject-color">ffb-80-1</span>     <span class="predicate-color">sameAS</span>         <span class="object-color">11879132X</span> .
+</code></pre><p
+    class="x-small"><a
+        href="https://www.deutsche-digitale-bibliothek.de/entity/11879132X"
+        >https://deutsche-digitale-bibliothek.de/entity/11879132X</a></p>
+                        <h3>XML Silo | container</h3>-->
+                        <pre><code class="js">&lt;person xml:id="ffb-80-1" sex="1"&gt;
+&lt;persName 
+  ref="http://d-nb.info/gnd/11879132X"&gt;
+  Meir Rothschild ben Anschel Rothschild
+&lt;/persName&gt; 
+&lt;death when="1812-09-19"/&gt; 
+&lt;/person&gt;</code></pre>
+                        <pre><code class="xml">
+<span class="subject-color">subject</span>      <span class="predicate-color">predicate</span>      <span class="object-color">object</span> .
+
+<span class="subject-color">epidat-ID</span>    <span class="predicate-color">sameAS</span>         <span class="object-color">GND-ID</span> .
+<span class="subject-color">ffb-80-1</span>     <span class="predicate-color">sameAS</span>         <span class="object-color">11879132X</span> .
+</code></pre>
+                        <p class="x-small right"><a href="http://www.steinheim-institut.de/cgi-bin/epidat?id=ffb-80">ffb-80</a></p>
+                        <!--<div><blockquote>Semantic Web is breaking down the data silos</blockquote>
+                            <p class="x-small right">Tim Berners-Lee: <a
+                                href="https://www.youtube.com/watch?v=OM6XIICm_qo">The next Web
+                                of open, linked data</a></p></div>-->
+                    </div></div>
+            </div>
+            <!--<div class="step">
+                <h2 class="red">Jüdischer Friedhof Mainz im 3D Model</h2>
+                <ul class="line-height-one-five">
+                    <li>Fachhochschule Mainz, Abteilung Geoinformatik hat im Rahmen eines studentischen Projekts einen <a href="http://ibr.spatialhumanities.de/gedenkfriedhof/viewer/">terrestrischen Laserscan</a> erstellt</li>
+                    <li>Steinheim-Institut (epidat) bereitet die <a href="http://www.steinheim-institut.de/cgi-bin/epidat?id=mz1">Edition</a> des Friedhofs vor und hat strukturierte Daten</li>
+                    <li>Torsten Schrade hat einen Webservice entwickelt um RDF statements aus XML-Daten zu extrahieren</li>
+                    
+                    <li><a href="http://ibr.spatialhumanities.de/gedenkfriedhof/viewer/">Gemeinsamer Workshop</a> um Punktwolken (3D Model) mit  epigraphischen Forschungsdaten  (epidat/EpiDoc TEI XML) zu verbinden mit dem XTriples Webservice (RDF-Lifting)                   </li>
+                </ul>
+            </div>-->
+            <div class="step">
+                <h2 class="red">3D model of Jewish Cemetery Mainz </h2>
+                <ul class="line-height-one-five">
+                    <li>School of Technology – 
+                        Geoinformatics and Surveying Mainz had made with students <a href="http://ibr.spatialhumanities.de/gedenkfriedhof/viewer/">a terrestrial laserscan</a> </li>
+                    <li>Steinheim-Institut (epidat) has worked on <a href="http://www.steinheim-institut.de/cgi-bin/epidat?id=mz1">edition</a> of the cemeterey and has structured data</li>
+                    <li>Torsten Schrade, Academy of Science and Literature, Mainz, had developed a webservice to extract RDF statements from XML-Data</li>
+                    
+                    <li><a href="http://ibr.spatialhumanities.de/gedenkfriedhof/viewer/">joint workshop</a> on linking scatter plot points (3D model) with epigraphic research Data
+                        (epidat/EpiDoc TEI XML) via the XTriples Webservice: RDF-Lifting from XML
+                    </li>
+                </ul>
+            </div>
+            <div class="step">
+                <video src="resources/img/genericViewer.mp4" controls="controls" autoplay="autoplay"
+                    class="even-right" width="1024"></video>
+                <p class="right x-small"><a
+                    href="http://ibr.spatialhumanities.de/gedenkfriedhof/viewer/">Workshop:
+                    IBR/RiR</a></p>
+            </div>
+            
+            <div class="step">
+                <h2 class="red">Sharing Data</h2>
+                <table class="x-small line-height-one-five">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th><a href="http://cds.library.brown.edu/projects/Inscriptions">IIP</a> 
+                                Inscriptions of Israel | Palestine</th>
+                            <th><a href="http://www.steinheim-institut.de/cgi-bin/epidat?lang=en"
+                                >epidat</a> Research Platform for Jewish Epigraphy</th>
+                            <th><a href="http://www.inschriften.net">DIO</a> Deutsche Inschriften
+                                Online</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>online</strong></td>
+                            <td><figure class="even-left"><img
+                                src="resources/img/IIP.png" style="width:20rem"
+                                alt="tobedone"      /></figure></td>
+                            <td><figure class="even-left"><img
+                                src="resources/img/epidat_startpage.png" style="width:25rem"
+                                alt="tobedone"        /></figure></td>
+                            <td><figure class="even-left"><img
+                                src="resources/img/dio.png" style="width:25rem"
+                                alt="tobedone"          /></figure></td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <td><strong>time</strong></td>
+                            <td>500 BCE - 640 CE</td>
+                            <td>midth 11<sup>th</sup> - 20<sup>th</sup> century</td>
+                            <td>500-1650 CE</td>
+                        </tr>
+                        <tr>
+                            <td><strong>space</strong></td>
+                            <td>Israel Palestine</td>
+                            <td>Germany Netherlands Czechia Lithuania</td>
+                            <td>Germany Austria South Tyrol</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Genre</strong></td>
+                            <td>Different</td>
+                            <td>Funeral Inscriptions</td>
+                            <td>Different </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Format</strong></td>
+                            <td colspan="3" class="centered red">EpiDoc: TEI XML for Epigraphic
+                                Documents</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Example</strong></td>
+                            <td><a
+                                href="http://library.brown.edu/cds/projects/iip/viewinscr/qumr0001/"
+                                >QUAMR0001</a></td>
+                            <td><a
+                                href="http://www.steinheim-institut.de/cgi-bin/epidat?id=ffb-80&amp;lang=en"
+                                >ffb-80</a></td>
+                            <td><a
+                                href="http://www.inschriften.net/zeige/suchergebnis/treffer/nr/di034-0561.html#content"
+                                >34-561</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="x-small centered up-25"><a href="https://peace.sites.uu.nl">PEACE Portal</a> and <a
+                    href="https://digicademy.github.io/DARIAH-GT/">DARIAH-DE</a></p>
+            </div>
+            <div class="step">
+                <h2 class="red">Genderdistribution</h2>
+                <div class="row">
+                    
+                    <div class="nine columns box" style="height:600px;">
+                        <svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+                            <g transform="translate(40,0)">
+                                <text x="-40" y="23"
+                                    style="font-size: 10px; font-family: Arial, Helvetica;"
+                                    >DIO</text>
+                                <g class="y axis" transform="translate(0,30)" fill="none"
+                                    font-size="10" font-family="sans-serif" text-anchor="end"
+                                    style="font-size: 10px; font-family: Arial, Helvetica;">
+                                    <path class="domain" stroke="#000" d="M-6,260.5H0.5V0.5H-6"
+                                        style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                    <g class="tick" opacity="1" transform="translate(0,260.5)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">0</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,247.692118226601)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">10</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,234.88423645320196)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">20</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,222.07635467980296)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">30</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,209.26847290640393)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">40</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,196.46059113300493)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">50</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,183.65270935960592)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">60</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,170.8448275862069)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">70</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,158.03694581280786)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">80</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,145.22906403940885)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">90</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,132.42118226600985)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">100</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,119.61330049261085)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">110</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,106.80541871921181)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">120</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,93.99753694581281)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">130</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,81.18965517241378)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">140</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,68.38177339901478)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">150</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,55.573891625615744)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">160</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,42.76600985221677)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">170</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,29.958128078817737)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">180</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,17.150246305418733)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">190</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,4.342364532019701)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">200</text>
+                                    </g>
+                                </g>
+                                <rect transform="translate(0,30)" class="bar" x="19" width="167"
+                                    y="249.7536945812808" height="10.246305418719203"
+                                    style="fill: rgb(191, 105, 105);"/>
+                                <rect transform="translate(0,30)" class="bar" x="204" width="167"
+                                    y="0" height="260" style="fill: rgb(105, 108, 191);"/>
+                                <rect transform="translate(0,30)" class="bar" x="389" width="167"
+                                    y="175.46798029556652" height="84.53201970443348"
+                                    style="fill: rgb(191, 105, 126);"/>
+                                <rect transform="translate(0,30)" class="bar" x="574" width="167"
+                                    y="183.15270935960592" height="76.84729064039408"
+                                    style="fill: rgb(191, 182, 105);"/>
+                            </g>
+                            <g transform="translate(40,290)">
+                                <text x="-40" y="23"
+                                    style="font-size: 10px; font-family: Arial, Helvetica;"
+                                    >EPI</text>
+                                <g class="y axis" transform="translate(0,30)" fill="none"
+                                    font-size="10" font-family="sans-serif" text-anchor="end"
+                                    style="font-size: 10px; font-family: Arial, Helvetica;">
+                                    <path class="domain" stroke="#000" d="M-6,260.5H0.5V0.5H-6"
+                                        style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                    <g class="tick" opacity="1" transform="translate(0,260.5)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">0</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,238.0474956822107)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">50</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,215.59499136442142)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">100</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,193.14248704663214)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">150</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,170.68998272884284)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">200</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,148.23747841105353)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">250</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,125.78497409326425)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">300</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,103.33246977547498)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">350</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,80.87996545768567)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">400</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,58.427461139896366)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">450</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,35.97495682210709)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">500</text>
+                                    </g>
+                                    <g class="tick" opacity="1"
+                                        transform="translate(0,13.522452504317783)">
+                                        <line stroke="#000" x2="-6"
+                                            style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                        <text fill="#000" x="-9" dy="0.32em">550</text>
+                                    </g>
+                                </g>
+                                <rect transform="translate(0,30)" class="bar" x="19" width="167"
+                                    y="246.07944732297065" height="13.920552677029349"
+                                    style="fill: rgb(191, 105, 105);"/>
+                                <rect transform="translate(0,30)" class="bar" x="204" width="167"
+                                    y="0" height="260" style="fill: rgb(105, 108, 191);"/>
+                                <rect transform="translate(0,30)" class="bar" x="389" width="167"
+                                    y="19.75820379965458" height="240.24179620034542"
+                                    style="fill: rgb(191, 105, 126);"/>
+                            </g>
+                            <g class="x axis" transform="translate(40,580)" fill="none"
+                                font-size="10" font-family="sans-serif" text-anchor="middle"
+                                style="font-size: 10px; font-family: Arial, Helvetica;">
+                                <path class="domain" stroke="#000" d="M0.5,6V0.5H760.5V6"
+                                    style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                <g class="tick" opacity="1" transform="translate(102.5,0)">
+                                    <line stroke="#000" y2="6"
+                                        style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                    <text fill="#000" y="9" dy="0.71em">0</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(287.5,0)">
+                                    <line stroke="#000" y2="6"
+                                        style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                    <text fill="#000" y="9" dy="0.71em">1</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(472.5,0)">
+                                    <line stroke="#000" y2="6"
+                                        style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                    <text fill="#000" y="9" dy="0.71em">2</text>
+                                </g>
+                                <g class="tick" opacity="1" transform="translate(657.5,0)">
+                                    <line stroke="#000" y2="6"
+                                        style="shape-rendering: crispedges; fill: none; stroke: rgb(204, 204, 204);"/>
+                                    <text fill="#000" y="9" dy="0.71em">9</text>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="three columns"
+                        ><h3 class="">bar chart Legende</h3>
+                        <table class="small right">
+                            <tr>
+                                <td>1</td>
+                                <td>male</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>female</td>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>unknown</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>not defined</td>
+                            </tr>
+                        </table>
+                        <h6>Configuration</h6>
+                        <figure class="mfp-lightbox small"><a
+                            href="resources/img/bar_chart_config.png" ><img
+                                src="resources/img/bar_chart_config.png"
+                                alt="tobedone"          /></a></figure>
+                        <p class="x-small centered">Visualisierung <a href="http://app.rawgraphs.io" target="_blank"
+                            >http://app.rawgraphs.io</a> </p>
+                    </div>
+                    <div class="row"><div class="twalve columns"><p class="centered x-small up-25">Max Grüntgens, Thomas Kollatz: <a href="https://digicademy.github.io/DARIAH-GT">Annotieren, analysieren, visualisieren. Repositorien mergen, analysieren und visualisieren</a>, Darmstadt 2018</p></div>
+                
+            </div></div></div>
+            <div class="step">
+                <h2 class="red">How to harvest epidat records?</h2>
+                <blockquote>epidat provides access to all collections and their resources of the epidat collection.<br/>
+                Each <code>&lt;resource&gt;</code> is part of a <code>&lt;collection&gt;</code> which is part of all epidat-<code>&lt;collections&gt;</code>.</blockquote>
+                <ul class="line-height-one-five down-100 medium">
+                    <li><a href="http://www.steinheim-institut.de/cgi-bin/epidat?info=collections">http://www.steinheim-institut.de/cgi-bin/epidat?info=collections</a></li>
+
+                    <li><a href="http://www.steinheim-institut.de:80/cgi-bin/epidat?info=resources-hha">http://www.steinheim-institut.de:80/cgi-bin/epidat?info=resources-hha</a></li>                </ul>
+                <p class="x-small right"><a href="http://www.steinheim-institut.de/cgi-bin/epidat?info=howtoharvest">howtoharvest…</a></p>
+                
+            </div>
+            <div class="step">
+                <div class="centered">
+                    <h1 class="red">F I N I S</h1>
+                    <h2>סוף דבר הכל נשמע</h2>
+                </div>
+
+            
+            <div class="centered down-100">
+                <h3>
+                    <a href="#literature">Software und Literature</a></h3><p class="x-small"
+                        ></p>
+            </div>
+            </div>
+        <div class="step" id="literature">
+            <h2 class="red">Literature &amp; Software</h2>
+            <h4>on epidat related projects</h4>
+            <ul class="x-small line-height-one-five">
+                <li>Arera-Rütenik, Tobias; Kollatz. 2016. “Interdisziplinäre Perspektiven Auf
+                    Grabmale Und Visualisierung Räumlicher Strukturen. Ergebnisse Eines
+                    Projektes Zu Historischen Jüdischen Friedhöfen.” Objekt Und Schrift.
+                    Beiträge Zur Materiellen Kultur Des Jüdischen Jüdisches Kulturerbe (1):
+                    25–29.</li>
+                <li>Bender, Michael, Rapp, Andrea, and Thomas Kollatz. 2018. “<a
+                    href="http://edition-topoi.org/articles/details/1444" target="_blank">Objekte Im
+                    Digitalen Diskurs</a> – Epistemologische Zugänge Zu Objekten Durch
+                    Digitalisierung Und Diskursive Einbindung in Virtuelle Forschungsumgebungen
+                    Und -Infrastrukturen.” In Berlin Studies of the Ancient World.
+                    Objektepistemologien. Berlin.</li>
+                <li>Kollatz, Thomas. 2015. “Epidat - Datenbank Zur Jüdischen
+                    Grabsteinepigraphik. Inventarisierung Und Dokumentation Historischer
+                    Jüdischer Friedhöfe.” In Wenn Das Erbe in Die Wolken Kommt. Digitalisierung
+                    Und Kulturelles Erbe, 161–68. Essen: Klartext.</li>
+                <li> ———. 2018. “<a
+                    href="https://www.degruyter.com/downloadpdf/books/9783110607208/9783110607208-019/9783110607208-019.pdf" target="_blank"
+                    >EPIDAT. Research Platform for Jewish Epigraphy</a>.” In Crossing
+                    Experiences in Digital Epigraphy. From Practice to Discipline. Digital
+                    Epigraphy, 231–239. Warsaw, Poland: De Gruyter open. Crossing Experiences in
+                    Digital Epigraphy: From Practice to Discipline.</li>
+                <li>Kollatz, Thomas, and Max Grüntgens. 2018. “Korpusbasiertes Arbeiten und
+                    epigraphische Datenbanken. Möglichkeiten und Herausforderungen am Beispiel
+                    von EPIDAT und DIO.” Osnabrücker Beiträge zur Sprachtheorie 92: 157–74.</li>
+            </ul>
+        </div>
+            <div class="step">
+                <h4>RDF-Lifting with XTriples</h4>
+                <ul class="x-small line-height-one">
+                    <li>
+                        <strong>Max Grüntgens, Thomas Kollatz</strong>, XML2RDF – Extracting RDF Statements From XML Resources With XTriples. Workshop at the
+                        DH2019 Conference in Utrecht, 09.07.2019, <a href="https://dh2019.adho.org/workshops/">https://dh2019.adho.org/workshops/</a>.
+                    </li>
+                    <li>
+                        <strong>Julian Jarosch, Andreas Kuczera, Torsten Schrade and Tariq Youssef</strong>, Graphentechnologien in den Digital Humanities:
+                        Methoden und Instrumente zur Modellierung, Transformation, Annotation und Analyse. Workshop and conference paper for the 6th DHd conference, 26.03.2019, 
+                        Mainz/Frankfurt, DOI <a href="https://doi.org/10.5281/zenodo.2596095">10.5281/zenodo.2596095</a>, p.33-36.
+                    </li>
+                    <li>
+                        <strong>Max Grüntgens and Thomas Kollatz</strong>, Two become one. Lifting TEI EpiDoc encoded corpora to RDF. The case of DIO and EPIDAT.
+                        Poster presentation at the Linked Pasts IV conference, 12.12.2018, Mainz. (<a href="https://digicademy.github.io/Two_become_one/">Poster</a>)
+                    </li>
+                    <li>
+                        <strong>Max Grüntgens and Thomas Kollatz</strong>, Repositorien mergen, analysieren und visualisieren. Presentation at the DARIAH Grand Tour,
+                        20.09.2018, Darmstadt. (<a href="https://digicademy.github.io/DARIAH-GT/">Slides</a>)
+                    </li>
+                    <li>
+                        <strong>Torsten Schrade</strong>, Semantische Technologien und Fragen des Raums. Presentation at the workshop on 'Digitale Raumdarstellungen. 
+                        Barocke Kunst im Kontext aktueller Zugriffe der Spatial Humanities' at the Phillips-Universität Marburg, 04.04.2017. 
+                        (<a href="https://metacontext.github.io/2017-ws-deckenmalerei">Slides</a>)
+                    </li>
+                    <li>
+                        <strong>Torsten Schrade</strong>, Grundlagen von Linked Open Data (LOD) für die Nachnutzung von Forschungsdaten. Workshop at the conference of the working group 
+                        on eHumanities of the Union of the German Academies of Sciences, 11.11.2016, Düsseldorf.
+                        (<a href="https://digicademy.github.io/2016-agehum-lodworkshop/">Slides</a>)
+                    </li>
+                    <li>
+                        <strong>Torsten Schrade</strong>, CIDOC-CRM Modellierung epigraphischer Fachdaten mit dem XTriples Webservice. Presentation at the DARIAH-DE workshop on
+                        'Research infrastructures for the Humanities and CIDOC-CRM', 25.07.2016, Darmstadt. (<a href="https://digicademy.github.io/dariah-workshop2016-xtriples-cidoc/">Slides</a>)
+                    </li>
+                    <li>
+                        <strong>Max Grüntgens and Torsten Schrade</strong>: Data Repositories in the Humanities and the Semantic Web. Modelling, Linking, Visualising. Conference
+                        paper and presentation at the 1st WHiSe Workshop / ESWC 2016, 29.05.2016, Anissaras - Crete, URN <a href="http://ceur-ws.org/Vol-1608/paper-07.pdf">urn:nbn:de:0074-1608-8</a>, p. 53-63. 
+                        (<a href="http://digicademy.github.io/whise2016-xtriples/">Slides</a>)
+                    </li>
+                    <li>
+                        <strong>Torsten Schrade</strong>, Geisteswissenschaftliche Fachdatenrepositorien im Semantic Web. Modellierung, Vernetzung, Visualisierung. Conference
+                        paper and presentation at the 3rd DHd conference in Leipzig, 07.-12.03.2016, ISBN <a href="http://www.worldcat.org/isbn/9783941379053">978-3-941379-05-3</a>, 
+                        p. 215-218. (<a href="http://dhd2016.digitale-akademie.de/presentation/index.html">Slides</a>)
+                    </li>
+                    <li>
+                        <strong>Torsten Schrade</strong>, Digitale Briefeditionen im Semantic Web. Der XTriples Webservice – Semantische Aussagen aus XML.
+                        Presentation at the conference of the working group on eHumanities of the Union of the German Academies of Sciences,
+                        Heidelberg, 15.09.2015. (<a href="http://metacontext.github.io/presentation-correspsearch-xtriples/">Slides</a>)
+                    </li>
+                </ul>
+            </div>
+        <div class="step"><h4>EpiDoc and Digital Epigraphy</h4>
+            <ul class="small line-height-one-five">
+                <li>Tom Elliott, Gabriel Bodard, Hugh Cayless et al. (2006-2017), <a
+                    href="https://sourceforge.net/p/epidoc/wiki/Home/" target="_blank">EpiDoc: Epigraphic
+                    Documents in TEI XML. Online material</a>, available: &lt;<a
+                        href="http://epidoc.sf.net" target="_blank">http://epidoc.sf.net</a>&gt;</li>
+                <li>EpiDoc on <a href="">facebook</a></li>
+                <li>Julia Flanders; Charlotte Roueché: <a
+                    href="http://www.stoa.org/epidoc/gl/latest/intro-eps.html" target="_blank">Gentle
+                    Introduction To Mark-Up For Epigraphers</a>
+                </li>
+                <li>Bodard G. &amp; Stoyanova S. 2016. <a href="https://doi.org/10.5334/bat.d" target="_blank"
+                    >Epigraphers and Encoders</a>: Strategies for Teaching and Learning
+                    Digital Epigraphy. In: Romanello M. &amp; Bodard G, Digital Classics Outside
+                    the Echo-Chamber. London: Ubiquity Press.</li>
+                <li>H. Cayless; C.M. Roueché; Tom Elliott; Gabriel Bodard (2009): "Epigraphy in
+                    2017." Digital Humanities Quarterly 3.1. <a
+                        href="http://digitalhumanities.org/dhq/vol/3/1/000030/000030.html" target="_blank"
+                        >http://digitalhumanities.org/dhq/vol/3/1/000030/000030.html</a></li>
+            </ul>
+        </div>
+        <div class="step"><h4>Recent Presentations</h4>
+            <ul class="x-small line-height-one-five">
+                <li>Kollatz, Thomas. 2018a. “<a href="https://kollatzthomas.github.io/godot/" target="_blank"
+                    >Jewish Calendar Dates in Epidat</a>: Research Platform for Jewish
+                    Epigraphy.” presented at the Godot workshop: Non-Gregorian Calendar Dates in
+                    Digitial Humanities, Heidelberg, November 26.
+                    https://kollatzthomas.github.io/godot/.</li>
+                <li> ———. 2018b. “<a href="https://kollatzthomas.github.io/genealogy" target="_blank">Epigraphic
+                    Research Data as Source for Onomastics and Genealogy</a>: The Case of
+                    ‘Epidat’, the Research Platform for Jewish Epigraphy.” presented at the
+                    GENEALOGY AND THE SCIENCES, The David Lopatie Conference Centre, Weizmann
+                    Institute of Science, Rehovot, Israel, December 17.
+                    https://kollatzthomas.github.io/genealogy.</li>
+                <li> ———. 2018c. “<a href="https://kollatzthomas.github.io/20180611_Utrecht" target="_blank"
+                    >Digitale Approaches to Cemeteries</a>: Preservation and Education.”
+                    presented at the All that remains: Education and Conservation of Jewish
+                    Funerary Culture, Utrecht. </li>
+                <li> ———. 2018d. “<a
+                    href="https://kollatzthomas.github.io/20180305_Workshop_Schum/" target="_blank"
+                    >Epigraphische Datenbanken zu den Schum-Gedenkstätten</a>: Status Quo
+                    und Desiderata.” presented at the Intensivworkshop Informationssysteme,
+                    Mainz Coworking Area im Dock 39. </li>
+            </ul></div>
+        <div class="step"><h4>topic related presentations</h4>
+            <ul class="x-small line-height-one-five">
+                <li> ———.2019a. “<a href="https://kollatzthomas.github.io/20180529_Wuppertal/" target="_blank"
+                    >epidat – Forschungsplattform zur jüdischen Grabsteinepigraphik</a>:
+                    Edition, Kommentierung, Annotation, Visualisierung und Analyse jüdischer
+                    Grabmale aus neun Jahrhundert.” presented at the Vortragsreihe des IZED im
+                    Sommersemester 2018: Annotation Kommentar Erläuterung, Wuppertal </li>
+                <li> ———. 2019b. “<a href="https://kollatzthomas.github.io/Bar_Ilan_paper" target="_blank"
+                    >Evolution of a DH-Project: Turns and Trends of a Digital Epigraphic
+                    Endeavour.</a>” presented at the Technological Tools for Manuscript
+                    Research, Ramat Gan, Bar-Ilan University, Israel, February 13.
+                    https://kollatzthomas.github.io/Bar_Ilan_paper.</li>
+                <li>Kollatz, Thomas, and Max Grüntgens. 2018. “<a
+                    href="https://digicademy.github.io/DARIAH-GT" target="_blank">Annotieren, analysieren,
+                    visualisieren</a>. Repositorien mergen, analysieren und visualisieren.”
+                    presented at the DARIAH-DE Grand Tour, Darmstadt. </li>
+                <li> ———. 2018. “<a href="https://digicademy.github.io/Two_become_one/" target="_blank">Two
+                    Become One</a>: Lifting TEI EpiDoc Encoded Corpora to RDF – The Case of
+                    DIO and EPIDAT.” Poster presented at the Linked Pasts IV: Views From Inside
+                    The LOD-cloud, Mainz, December 12.
+                    https://digicademy.github.io/Two_become_one/.</li>
+                <li>Andreas Kuczera, Thomas Kollatz und Torsten Schrade: <a
+                    href="http://dhd2016.digitale-akademie.de/workshop/" target="_blank">Methods and Tools
+                    for visualising Digital Humanities data sets</a>, DHd 2016 Leipzig</li>
+            </ul></div>
+        <div class="step">
+            <h4>Software</h4>
+            <ul class="small line-height-one-five">
+                <li>
+                    <a href="https://github.com/impress/impress.js" target="_blank">Impress.js</a>
+                    (presentation) </li>
+                <li><a href=""></a></li>
+                <li>
+                    <a href="https://github.com/dimsemenov/Magnific-Popup" target="_blank">Magnific Popup</a>
+                    (Lightbox) </li>
+                <li>
+                    <a href="http://unitegallery.net/" target="_blank">Unite Gallery</a> (photo gallery) </li>
+            </ul>
+        </div>
+        </div>
+        <!-- jquery -->
+        <script src="vendor/jquery/jquery-1.11.0.min.js"></script>
+        <!-- unite gallery -->
+        <script src="vendor/unitegallery/js/unitegallery.min.js"></script>
+        <script src="vendor/unitegallery/themes/tiles/ug-theme-tiles.js"></script>
+        <script src="resources/js/unite.gallery.js"></script>
+        <!-- chartist -->
+        <!--<script src="vendor/chartist/chartist.min-0.9.7.js"></script>
+        <script src="resources/js/chartist.charts.js"></script>-->
+        <!-- codemirror -->
+        <!--<script src="vendor/codemirror/lib/codemirror.js"></script>
+        <script src="vendor/codemirror/addon/edit/matchbrackets.js"></script>
+        <script src="vendor/codemirror/mode/sparql/sparql.js"></script>
+        <script>
+        var editor = CodeMirror.fromTextArea(document.getElementById("sparql"), {
+            mode: "application/sparql-query",
+            matchBrackets: true,
+            lineNumbers: true,
+            viewportMargin: Infinity
+        });
+    </script>-->
+        <!-- highlight -->
+        <script src="vendor/highlight/highlight.pack-9.3.0.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script src="resources/js/hljs.linenumbering.js"></script>
+        <!-- swiper -->
+        <script src="vendor/swiper/swiper.min.js"></script>
+        <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 30,
+            hashnav: true
+        });
+    </script>
+        <!-- magnific popup -->
+        <script src="vendor/magnific-popup/jquery.magnific-popup.min-1.1.0.js"></script>
+        <script src="resources/js/magnific-popup.lightbox.js"></script>
+        <!-- impress.mod.js -->
+        <script src="vendor/impress/impress.fork.js"></script>
+        <script src="vendor/impress/impress-slidenum.js"></script>
+        <script>
+        var obj = impress();
+        obj.init();
+        initSlideNo(obj);
+    </script>
+        <!-- Links to TEI-Documentation -->
+        <!--<script src="resources/js/tei-documentation-links.js">-->
+        <!--</script>-->
+    </body>
+</html>
