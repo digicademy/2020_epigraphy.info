@@ -1,5 +1,5 @@
-# title    
-## subtitle
+# epidat – research platform for Jewish Epigraphy    
+## Interface, Re-Use and cooperations (2002-today)
 
 presented at [epigraphy.info workshop_4](http://epigraphy.info/workshop_4.html) Hamburg 2020-02-19
 
